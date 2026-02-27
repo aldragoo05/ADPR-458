@@ -1,14 +1,14 @@
-body {
-background-image: url("../Images/white-waves.png");
-margin: 0px 10%;
+* {
+box-sizing: border-box;
 font-family: sans-serif;
 }
-.container {
-background-color: white;
+body {
+background-image: url("../Images/white-waves\ copy.png");
+margin: 0;
 }
 header {
 background-color:#bc9e82; 
-color:#f9f0ea;
+color:white;
 padding: 2rem;
 }
 h1 {
@@ -24,3 +24,28 @@ font-size: 1.25rem;
 border-radius: 50%;
 border: 5px solid #bc9e82;
 }
+
+/******** Layout ********/
+.container {
+background-color: white;
+display: grid;
+gap: 1.5rem;
+grid-template-columns: repeat(12, 1fr);
+margin: 0 auto;
+width: min(95%, 75rem);
+}
+
+.container > * {
+grid-column: span 12;
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 40rem) {
+    .col-span-8 {
+        grid-column: span 8;
+    }
+      .col-span-4 {
+        grid-column: span 4;
+    }
+}
+
