@@ -7,7 +7,7 @@ background-image: url("../Images/white-waves\ copy.png");
 margin: 0;
 }
 header {
-background-color:#bc9e82; 
+background-color:hsl(30, 51%, 26%); 
 color:white;
 padding: 2rem;
 }
@@ -22,7 +22,15 @@ font-size: 1.25rem;
 }
 .circle {
 border-radius: 50%;
-border: 5px solid #bc9e82;
+border: 5px solid #654321;
+}
+a:link, a:visited {
+color: #654321;
+text-decoration: none;
+}
+a:hover {
+color: #26170f;
+text-decoration: underline;
 }
 
 /******** Layout ********/
@@ -49,3 +57,20 @@ grid-column: span 12;
     }
 }
 
+
+/******** Components ********/
+.button:link, .button:visited {
+color: white;
+background-color: #654321;
+text-align: center;
+text-decoration: none;
+padding: 1rem 1.75rem;
+border-radius: 2rem;
+box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+display: inline-block;
+margin: 0 .25rem .25rem 0;
+transition: background-color 0.5s ease;
+}
+.button:hover {
+background-color: #26170f;
+}
