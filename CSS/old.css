@@ -1,107 +1,54 @@
-* {
-box-sizing: border-box;
-font-family: sans-serif;
-}
 body {
-background-image: url("../Images/white-waves\ copy.png");
-margin: 0;
-}
-header {
-background-color:hsl(30, 51%, 26%); 
-color:white;
-padding: 2rem;
-}
-h1 {
-font-size: 2rem;
-}
-h2 {
-font-size: 1.5rem;
-}
-h3 {
-font-size: 1.25rem;
-}
-.circle {
-border-radius: 50%;
-border: 5px solid #654321;
-}
-a:link, a:visited {
-color: #654321;
-text-decoration: none;
-}
-a:hover {
-color: #26170f;
-text-decoration: underline;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/******** Layout ********/
-.container {
-background-color: white;
-display: grid;
-gap: 1.5rem;
-grid-template-columns: repeat(12, 1fr);
-margin: 0 auto;
-width: min(95%, 75rem);
+.announcement-bar {
+  background-color: #6b2d5c;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
 }
 
-.container > * {
-grid-column: span 12;
+.announcement-bar a {
+  color: white;         
+  text-decoration: none; 
 }
 
-/* Desktop Layout */
-@media screen and (min-width: 40rem) {
-    .col-span-8 {
-        grid-column: span 8;
-    }
-      .col-span-4 {
-        grid-column: span 4;
-    }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  background-color: white;
 }
 
-/******** Navigation Using Flexbox ********/
-nav {
-background-color: #bc9e82;
-padding: 0 1rem;
-display: flex;
-justify-content: center;
-position: sticky;
-top: 0;
-}
-nav ul {
-margin: 0;
-padding: 0;
-list-style: none;
-display: flex;
-flex-flow: row wrap;
-}
-nav li {
-margin: 0 0.5rem;
-}
-nav a:link, nav a:visited {
-color: white;
-text-decoration: none;
-font-size: 1.125rem;
-padding: 1rem;
-display: block;
-transition: ease-in-out 250ms;
-}
-nav a:hover {
-background-color: #654321;
-color: white; 
+.nav-left {
+  display: flex;
+  align-items: center;
 }
 
-/******** Components ********/
-.button:link, .button:visited {
-color: white;
-background-color: #654321;
-text-align: center;
-text-decoration: none;
-padding: 1rem 1.75rem;
-border-radius: 2rem;
-box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
-display: inline-block;
-margin: 0 .25rem .25rem 0;
-transition: background-color 0.5s ease;
+.nav-left a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
-.button:hover {
-background-color: #26170f;
+
+.nav-right a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
 }
+
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  margin-right: 20px;
+  letter-spacing: 2px;
+}
+
+
