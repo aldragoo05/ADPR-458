@@ -55,66 +55,94 @@ body {
 }
 
 .feature-section {
-  background-color: #f5f1e9;
-  padding: 20px 0;
-  height: 650px;
-}
-
-.feature-layout {
-  max-width: 1100px;
+  max-width: 1400px;
+  height: 525px;
+  background-color: #f5efe6;
   margin: 0 auto;
-  display: flex;
-  gap: 16px;
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.7fr;
+  gap: 0;
 }
 
-.feature-left {
-  margin-left: -32px;
+.feature-section img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.feature-left img {
+.left-image img {
+  align-self: center;
   width: 430px;
-  height: 500px;
-  object-fit: cover;
+  height: 475px;
+  margin-left: 20px;
 }
 
-.feature-center {
-  position: relative; 
-}
- 
-.feature-center img {
-  width: 450px;
-  height: 380px;
-  padding: 25px;
-  object-fit: cover;
+.center-image {
+   margin-left: -50px;
 }
 
-.label-left {
-  top: -20px;
-  left: 0;
-  font-size: 12px;
-  color: black;
-  letter-spacing: 1px;
-  position: absolute;
+
+.center-image img {
+  text-align: center;
+  width: 415px;
+  height: 350px;
+  padding: 30px 0 0 0;
 }
 
-.label-right {
-  position: absolute;
-  top: -20px;
-  right: 0;
-  color: black;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-.feature-right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.feature-right img {
+.right-image img {
+  align-self: start;
   width: 240px;
   height: 260px;
+}
+
+.sub {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.feature-title {
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.trending {
+  text-align: center;
+  height: 525px;
+}
+
+.trending-title {
+  padding: 30px 40px 30px 40px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.trending-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.trending-item {
+  cursor: pointer;
+}
+
+.trending-item img {
+  width: 250px;
+  height: 350px;
   object-fit: cover;
+  display: block;
+}
+
+.trending-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.trending-item img:hover {
+  opacity: 0.85;
+  transition: 0.3s ease;
 }
