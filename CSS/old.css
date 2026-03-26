@@ -459,3 +459,271 @@ body {
   font-size: 14px;
   cursor: pointer;
 }
+
+/* Page 2*/
+.new-here2 {
+  background-color: #f4f4f4;
+  height: 525px;
+  display: block;
+}
+
+.new-here-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.new-here-images img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.new-here-content {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.new-here-content h2 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.new-here-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.new-here-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+}
+
+.top-items {
+  padding: 40px 20px;
+}
+
+.top-items h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 175px;
+}
+
+.top-items p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.product2 img {
+  width: 100%;
+  object-fit: cover;
+  height: 380px;
+}
+
+.left-product img {
+ width: 100%;
+ height: 550px;
+ object-fit: cover;
+}
+
+.product2 p {
+  font-size: 15px;
+  margin-top: 8px;
+  margin: 8px 0 2px 0;
+}
+
+.product2 span {
+  font-size: 13px;
+  margin: 0;
+}
+
+.top-rated {
+  padding: 30px 20px;
+  background-color: #F5F5F3;
+}
+
+.top-rated-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.top-rated-header h2 {
+  font-size: 28px;
+}
+
+.top-rated-header a {
+  text-decoration: underline;
+  font-size: 14px;
+  color: black;
+}
+
+.top-rated-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.rated-item img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.stars {
+  color: #d6bfa3;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.rated-item h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.rated-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.matching-sets {
+  background-color: white;
+  padding: 80px 40px;
+  margin-bottom: 10px;
+}
+
+.matching-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.matching-text .small {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.matching-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.matching-text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.matching-text button {
+  padding: 12px 20px;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+}
+
+.matching-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.matching-images img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.leggings {
+  background-color: white;
+  padding: 80px 40px;
+}
+
+.leggings-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.leggings-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.leggings-text {
+  padding: 40px;
+}
+
+.leggings-text .small {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.leggings-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.leggings-text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.leggings-text button {
+  padding: 12px 20px;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+}
+
+.popular-colors {
+  background-color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.popular-colors h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.black { background-color: #1C1C1C; }
+.light-gray { background-color: #D9D9D9; }
+.brown { background-color: #5A4432; }
+.gray { background-color: #CFCFCF; }
+.navy { background-color: #2C3448; }
+.beige { background-color: #E8E3D9; }
