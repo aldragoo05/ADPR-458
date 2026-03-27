@@ -310,7 +310,7 @@ body {
   margin-left: 10px;
 }
 
-.products {
+.products1 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
@@ -423,7 +423,6 @@ body {
   margin: 0 auto;
   margin-left: 210px;
   margin-right: 215px;
-  margin-bottom: 215px;
   position: relative;
 }
 
