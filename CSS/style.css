@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 70px;
-  padding: 25px 0;
+  padding: 10px 0;
   font-size: 25px;
 }
 
@@ -105,3 +105,171 @@ body {
   font-size: 110px;
   line-height: 0.8;
 }
+
+/* BRANDING SECTION */
+.branding-section {
+  background: #efefef;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  height: 900px;
+}
+
+.branding-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.branding-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* LEFT SIDE */
+.branding-left {
+  position: relative;
+  width: 50%;
+}
+
+.branding-title {
+  font-size: 150px;
+  font-weight: 900;
+  letter-spacing: -10px;
+}
+
+.branding-sub {
+  font-size: 65px;
+  font-style: italic;
+  font-weight: 500;
+  top: -60px;
+  position: relative;
+}
+
+.logo-img {
+  position: absolute;
+  left: 0;   
+  top: 260px;              
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+/* RIGHT SIDE */
+.branding-right {
+  width: 45%;
+  padding-top: 300px;
+   margin-left: -70px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 18px;
+  line-height: 1.75;
+  max-width: 5000px;
+  color: black;
+  letter-spacing: -0.3px;
+}
+
+/* READ MORE */
+.read-more {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+/* AD SECTION */
+.ad-section {
+  background: #efefef;
+  padding: 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ad-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* LEFT */
+.ad-left {
+  width: 40%;
+}
+
+.ad-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* RIGHT */
+.ad-right {
+  width: 60%;
+  margin-left: -50px;
+  max-width: 550px;
+}
+
+.ad-title {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.ad-text {
+  font-size: 18px;
+  line-height: 1.75;
+  letter-spacing: -0.3px;
+    width: 700px;
+  max-width: none;
+}
+
+/* BANNER SECTION */
+.project-section {
+  background: #efefef;
+  padding: 60px 80px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+}
+
+.project-container {
+  max-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.banner-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -30px;
+}
+
+.banner-img img {
+  width: 500px;
+  height: auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* TEXT */
+.project-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 18px;
+  line-height: 1.75;
+  letter-spacing: -0.2px;
+  max-width: 700px;
+}
+ 
