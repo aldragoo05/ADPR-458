@@ -55,7 +55,7 @@ body {
 
 /* TEXT */
 .text {
-  padding: 60px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,7 +63,7 @@ body {
 
 .small {
   margin-bottom: 8px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .text h1 {
@@ -98,8 +98,9 @@ body {
 }
 
 .by {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 8px;
+  padding-right: 20px;
 }
 
 .name h2 {
