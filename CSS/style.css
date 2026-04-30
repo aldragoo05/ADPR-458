@@ -36,6 +36,7 @@ body.home-page {
   padding: 20px 0;
   font-size: 25px;
   margin-bottom: 0;
+  flex-wrap: wrap;
 }
 
 .nav a {
@@ -133,16 +134,15 @@ body.home-page {
   display: flex;
   flex-direction: column;
   gap: 0;
+  align-items: stretch;  
 }
 
 .string-overlay {
   position: absolute;
-  top: 600px;   
+  top: 700px;   
   right: 0;
   width: 100%;
   max-width: 500px;
-  z-index: 10;
-  pointer-events: none;
 }
 
 /* LEFT SIDE */
@@ -192,7 +192,7 @@ body.home-page {
 .section-text {
   font-size: 18px;
   line-height: 1.75;
-  max-width: 500px;
+  max-width: 700px;
   color: black;
   letter-spacing: -0.3px;
 }
@@ -247,7 +247,7 @@ body.home-page {
   font-size: 18px;
   line-height: 1.75;
   letter-spacing: -0.3px;
-    width: 700px;
+  width: 700px;
   max-width: none;
 }
 
@@ -353,7 +353,7 @@ body.home-page {
 
 .social-description {
   font-size: 16px;
-  max-width: 900px;
+  max-width: 750px;
   line-height: 1.7;
   padding-left: 30px;
   margin-bottom: 10px;
@@ -383,7 +383,7 @@ body.home-page {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  max-width: 960px;
+  max-width: 7500px;
 }
 
 .yoga-grid img {
@@ -406,7 +406,7 @@ body.home-page {
 .yoga-description {
   font-size: 16px;
   line-height: 1.8;
-  max-width: 800px;
+  max-width: 750px;
   margin-bottom: 70px;
 }
 
@@ -508,25 +508,18 @@ body.home-page {
   height: auto;
   display: block;
 }
-
 @media (max-width: 768px) {
-
-  /* Force sections to stack */
-  .hero, .row, .container {
-    display: flex !important;
-    flex-direction: column !important;
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
   }
 
-  /* Stop overlap */
-  .hero-image, .right, .image, .graphic {
-    position: static !important;
-    width: 100% !important;
-    height: auto !important;
+  html, body {
+    overflow-x: hidden;
   }
 
-  /* Fix text getting cut off */
-  .hero-text, .left {
-    width: 100% !important;
+  img, video {
+    width: 100%;
+    height: auto;
   }
-
 }
