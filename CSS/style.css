@@ -509,9 +509,9 @@ body.home-page {
   display: block;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
-  .branding-container {
-    flex-direction: column;
+  .branding-left,
+  .branding-text {
+    width: 100% !important;
   }
 }
