@@ -10,6 +10,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+body.home-page {
+  height: 100vh;
+  overflow: hidden;
+}
+
 /* FONT CLASSES */
 .poppins-black {
   font-weight: 900;
@@ -28,7 +33,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 70px;
-  padding: 10px 0;
+  padding: 20px 0;
   font-size: 25px;
   margin-bottom: 0;
 }
@@ -45,12 +50,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 50vh 50vh;
+  height: calc(100vh - 70px);
 }
 
 /* BLOCKS */
 .block {
   position: relative;
   overflow: hidden;
+  min-height: 0;
 }
 
 /* TEXT */
@@ -67,7 +74,7 @@ body {
 }
 
 .text h1 {
-  font-size: 120px;
+  font-size: 100px;
   line-height: 0.85;
 }
 
@@ -89,10 +96,10 @@ body {
 
 /* NAME BLOCK */
 .name {
-  padding: 60px;
+  padding: 60px 60px 0 60px; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-end;
   text-align: right;
 }
@@ -104,7 +111,7 @@ body {
 }
 
 .name h2 {
-  font-size: 110px;
+  font-size: 90px;
   line-height: 0.8;
 }
 
@@ -126,6 +133,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0;
+}
+
+.string-overlay {
+  position: absolute;
+  top: 600px;   /* 🔑 adjust this to sit between sections */
+  right: 0;
+  width: 500px;
+  z-index: 10;
+  pointer-events: none;
 }
 
 /* LEFT SIDE */
