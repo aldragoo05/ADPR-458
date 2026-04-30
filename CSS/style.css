@@ -508,18 +508,10 @@ body.home-page {
   height: auto;
   display: block;
 }
+
+/* MOBILE */
 @media (max-width: 768px) {
-  * {
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-
-  html, body {
-    overflow-x: hidden;
-  }
-
-  img, video {
-    width: 100%;
-    height: auto;
+  .branding-container {
+    flex-direction: column;
   }
 }
