@@ -137,9 +137,10 @@ body.home-page {
 
 .string-overlay {
   position: absolute;
-  top: 600px;   /* 🔑 adjust this to sit between sections */
+  top: 600px;   
   right: 0;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   z-index: 10;
   pointer-events: none;
 }
@@ -191,7 +192,7 @@ body.home-page {
 .section-text {
   font-size: 18px;
   line-height: 1.75;
-  max-width: 5000px;
+  max-width: 500px;
   color: black;
   letter-spacing: -0.3px;
 }
@@ -439,7 +440,8 @@ body.home-page {
 
 /* IMAGE */
 .poster-image img {
-  width: 450px;   /* adjust as needed */
+  width: 100%;
+  max-width: 450px;   /* adjust as needed */
   height: auto;
   display: block;
 }
@@ -505,4 +507,26 @@ body.home-page {
   width: 450px;
   height: auto;
   display: block;
+}
+
+@media (max-width: 768px) {
+
+  /* Force sections to stack */
+  .hero, .row, .container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Stop overlap */
+  .hero-image, .right, .image, .graphic {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Fix text getting cut off */
+  .hero-text, .left {
+    width: 100% !important;
+  }
+
 }
